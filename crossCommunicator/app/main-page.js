@@ -10,7 +10,7 @@
 // Load the needed Components
 var appSettings = require('application-settings');
 var ObservableArray = require("data/observable-array").ObservableArray;
-var AJAXSocket = require("./AjaxSocket.js");
+var Socket = require("./AjaxSocket.js");
 
 // Our cool message icons
 var messageIcons = ["",String.fromCharCode(0xE0C9),String.fromCharCode(0xE85A),String.fromCharCode(0xE0B9)];
@@ -32,7 +32,7 @@ messages.push({from: 1, message: "And this is me responding to it...", iconRight
 */
 
 // Create our communications socket
-var socket = new AJAXSocket();
+var socket = new Socket();
 
 /***
  * Attach to the message listener
