@@ -11,6 +11,8 @@ var application = require("application");
 application.mainModule = "main-page";
 application.cssFile = "app.css";
 
+// This iOS specific code should not be required anymore; iOS is supposed to now Auto-register fonts
+// But in case you are using this code on v1.4 or earlier of NS, this code is left.
 if (application.ios) {
     var fontModule = require("ui/styling/font");
     fontModule.ios.registerFont("MaterialIcons-Regular.ttf");
