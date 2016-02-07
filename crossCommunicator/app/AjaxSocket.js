@@ -56,7 +56,7 @@ AJAXSocket.prototype.send = function(msg) {
     request.onerror = function() {
         console.log("!-------- Error", request.status);
     };
-    msg.from = this._from;
+    
     request.open("POST", url, true);
     request.send(encodeURI(JSON.stringify({from: this._from, message: msg})));
     console.log("Sending Request",url, msg);
