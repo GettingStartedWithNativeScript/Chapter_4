@@ -3,6 +3,6 @@
 		"id": "com.mastertechapps.crossCommunicator"
 	},
 	"dependencies": {
-		"tns-core-modules": latest"
+		"tns-core-modules": "latest"
 	}
 }
